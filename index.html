@@ -8,12 +8,24 @@
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/8ca39e687b.js" crossorigin="anonymous"></script>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            .font-roboto {
+                font-family: "Roboto", serif;
+            }
+            .font-bebas-neue {
+                font-family: "Bebas Neue", serif;
+            }
+        </style>
 	</head>
-	<body class="px-4 sm:px-8 md:px-16 lg:px-32">
-        <header>
+	<body class="font-roboto">
+        <header class="bg-[#FFFBF0] px-4 sm:px-8 md:px-16 lg:px-32">
             <nav class="flex justify-between items-center py-6 md:py-11">
-                <img class="h-7" src="icons/logo.png" alt="">
-                <ul class="hidden md:flex text-[#3C3C3C] font-medium md:gap-8 lg:gap-14 ms-auto">
+                <img class="h-7 cursor-pointer" src="icons/logo.png" alt="">
+                <ul class="hidden md:flex text-[#3C3C3C] font-medium md:gap-8 lg:gap-12">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Product</a></li>
                     <li><a href="#">About Us</a></li>
@@ -21,6 +33,20 @@
                 </ul>
                 <span class="text-2xl md:hidden"><i class="fa-solid fa-bars"></i></span>
             </nav>
+            <!-- banner section start -->
+            <section class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 pb-8 md:pb-16">
+                <div class="space-y-2">
+                    <h1 class="text-6xl lg:text-7xl font-bebas-neue text-[#363958]">
+                        <span class="block text-[#FABE4C]">Be the Penguins</span>
+                        of Winter
+                    </h1>
+                    <p class="max-w-80 text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="text-white cursor-pointer bg-gradient-to-r hover:bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                </div>
+                <div class="">
+                    <img class="w-full" src="images/model.png" alt="">
+                </div>
+            </section>
         </header>
     </body>
 </html>
